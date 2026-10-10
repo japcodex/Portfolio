@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julio André | Portfólio</title>
+    <meta
+      name="description"
+      content="Portfólio de Julio André: sites, design para redes sociais e modelos 3D."
+    />
+    <meta name="theme-color" content="#020013" />
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 
     <!-- Ligando com o CSS -->
     <link rel="stylesheet" href="style.css" />
@@ -10,46 +17,348 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+
+    <script src="script.js" defer></script>
   </head>
-  <body>
-    <!-- Barra Superior -->
-    <header>
-      <img src="" alt="Logotipo do Site" />
-      <nav>
+
+  <body id="topo">
+    <!-- Brilho de fundo (decorativo) -->
+    <div class="layer-blur" aria-hidden="true"></div>
+
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+    <!-- ===================== BARRA SUPERIOR ===================== -->
+    <header class="header" id="header">
+      <a href="#inicio" class="logo">
+        <img src="img/logo.svg" alt="Julio André" width="58" height="40" />
+      </a>
+
+      <nav class="nav" id="menu" aria-label="Navegação principal">
         <ul>
-          <li>Início</li>
-          <li>Projetos</li>
-          <li>Design</li>
-          <li>Modelos</li>
-          <li>Sobre</li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#modelos">Modelos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
         </ul>
       </nav>
+
+      <div class="header-actions">
+        <a href="#contato" class="btn btn-light">Contato</a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu"
+        >
+          Menu
+        </button>
+      </div>
     </header>
 
-    <!-- Hero -->
-    <section>
-      <h1>Texto Principal</h1>
-      <div>
-        <h2>Julio André</h2>
-        <p>Descrição</p>
-      </div>
-    </section>
+    <main id="conteudo">
+      <!-- ===================== HERO ===================== -->
+      <section class="hero" id="inicio">
+        <div class="container hero-inner">
+          <!-- EDITE: texto principal -->
+          <h1 class="hero-title">
+            <span class="line"><span>Ideias constroem</span></span>
+            <span class="line"><span>o Mundo.</span></span>
+          </h1>
 
-    <!-- Designs -->
-    <section>
-      <h2>Posts</h2>
-      <div class="divCards1">
-        <img src="" alt="Image 1" />
-        <img src="" alt="Image 2" />
-        <img src="" alt="Image 3" />
-        <img src="" alt="Image 4" />
-        <img src="" alt="Image 5" />
-        <img src="" alt="Image 6" />
+          <div class="hero-bottom">
+            <div class="hero-about">
+              <h2 class="hero-name">Julio André</h2>
+              <!-- EDITE: descrição -->
+              <p class="hero-desc">
+                Programador, designer e modelador 3D. 
+                Desenvolvo projetos que unem estética, precisão e 
+                funcionalidade, transformando ideias em soluções.
+              </p>
+              <p class="status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <strong>Disponível para novos projetos</strong>
+              </p>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-light" href="#projetos">Ver projetos</a>
+              <a class="btn btn-ghost" href="#sobre">Sobre mim</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== PROJETOS ===================== -->
+      <!-- EDITE: os 4 projetos abaixo são exemplos. Troque imagem, texto e links. -->
+      <section class="section" id="projetos">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Projetos</h2>
+            <p class="section-sub">
+              Sites e aplicações que desenvolvi, do layout ao código.
+            </p>
+          </div>
+
+          <ul class="projects">
+            <li class="project">
+              <a class="project-media" href="#" aria-label="Abrir 1">
+                <img src="img/projeto-1.svg" alt="Prévia 1" loading="lazy" />
+              </a>
+              <div class="project-info">
+                <p class="project-year">2026</p>
+                <h3 class="project-name">Projeto 1</h3>
+                <p class="project-desc">
+                  Descrição.
+                </p>
+                <p class="project-tags">HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                  <a href="#">Ver projeto</a>
+                  <a href="#">Código</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <a class="project-media" href="#" aria-label="Abrir 2">
+                <img src="img/projeto-2.svg" alt="Prévia 2" loading="lazy" />
+              </a>
+              <div class="project-info">
+                <p class="project-year">2026</p>
+                <h3 class="project-name">Projeto 2</h3>
+                <p class="project-desc">
+                  Descrião.
+                </p>
+                <p class="project-tags">HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                  <a href="#">Ver projeto</a>
+                  <a href="#">Código</a>
+                </div>
+              </div>
+            </li>
+
+            <li class="project">
+              <a class="project-media" href="#" aria-label="Abrir 3">
+                <img src="img/projeto-3.svg" alt="Prévia 3" loading="lazy" />
+              </a>
+              <div class="project-info">
+                <p class="project-year">2026</p>
+                <h3 class="project-name">Projeto 3</h3>
+                <p class="project-desc">
+                  Descrição.
+                </p>
+                <p class="project-tags">HTML, CSS, JavaScript</p>
+                <div class="project-links">
+                  <a href="#">Ver projeto</a>
+                  <a href="#">Código</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================== DESIGN (POSTS) ===================== -->
+      <!-- EDITE: troque as imagens img/post-1 ... post-6 pelos seus posts (proporção 4:5) -->
+      <section class="section" id="design">
+        <div class="container">
+          <div class="section-head">
+            <h2 class="section-title">Design</h2>
+            <p class="section-sub">
+              Posts e peças gráficas para redes sociais. Clique para ampliar.
+            </p>
+          </div>
+
+          <ul class="posts">
+            <li>
+              <button class="post" type="button">
+                <img src="img/post-1.svg" alt="Post 1" loading="lazy" />
+              </button>
+            </li>
+            <li>
+              <button class="post" type="button">
+                <img src="img/post-2.svg" alt="Post 2" loading="lazy" />
+              </button>
+            </li>
+            <li>
+              <button class="post" type="button">
+                <img src="img/post-3.svg" alt="Post 3" loading="lazy" />
+              </button>
+            </li>
+            <li>
+              <button class="post" type="button">
+                <img src="img/post-4.svg" alt="Post 4" loading="lazy" />
+              </button>
+            </li>
+            <li>
+              <button class="post" type="button">
+                <img src="img/post-5.svg" alt="Post 5" loading="lazy" />
+              </button>
+            </li>
+            <li>
+              <button class="post" type="button">
+                <img src="img/post-6.svg" alt="Post 6" loading="lazy" />
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================== MODELOS ===================== -->
+      <!-- EDITE: troque pelos seus modelos (imagem quadrada) -->
+      <section class="section" id="modelos">
+        <div class="container">
+          <div class="section-head section-head-row">
+            <div>
+              <h2 class="section-title">Modelos</h2>
+              <p class="section-sub">
+                Modelagem e renderização 3D. Arraste para ver mais.
+              </p>
+            </div>
+            <div class="carousel-controls">
+              <button
+                class="icon-btn"
+                type="button"
+                data-scroll="-1"
+                aria-label="Modelo anterior"
+              >
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6" /></svg>
+              </button>
+              <button
+                class="icon-btn"
+                type="button"
+                data-scroll="1"
+                aria-label="Próximo modelo"
+              >
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6" /></svg>
+              </button>
+            </div>
+          </div>
+
+          <ul class="models" id="models" tabindex="0" aria-label="Lista de modelos 3D">
+            <li class="model">
+              <img class="model-img" src="img/modelo-1.svg" alt="Render 1" loading="lazy" />
+              <h3 class="model-name">Nome 1</h3>
+              <p class="model-meta">Blender, 2026</p>
+            </li>
+            <li class="model">
+              <img class="model-img" src="img/modelo-2.svg" alt="Render 2" loading="lazy" />
+              <h3 class="model-name">Nome 2</h3>
+              <p class="model-meta">Blender, 2026</p>
+            </li>
+            <li class="model">
+              <img class="model-img" src="img/modelo-3.svg" alt="Render 3" loading="lazy" />
+              <h3 class="model-name">Nome 3</h3>
+              <p class="model-meta">Blender, 2026</p>
+            </li>
+            <li class="model">
+              <img class="model-img" src="img/modelo-4.svg" alt="Render 4" loading="lazy" />
+              <h3 class="model-name">Nome 4</h3>
+              <p class="model-meta">Blender, 20256</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===================== SOBRE ===================== -->
+      <!-- EDITE: foto, textos, ferramentas e trajetória -->
+      <section class="section" id="sobre">
+        <div class="container about">
+          <figure class="about-photo">
+            <img src="img/foto.svg" alt="Fotoé" loading="lazy" />
+          </figure>
+
+          <div>
+            <h2 class="section-title">Sobre</h2>
+            <p class="about-lead">
+              Descrição.
+            </p>
+            <p class="about-copy">
+              Descrição
+            </p>
+
+            <h3 class="about-subtitle">Ferramentas</h3>
+            <dl class="facts">
+              <div class="fact">
+                <dt>Design</dt>
+                <dd>Figma, Photoshop, Illustrator</dd>
+              </div>
+              <div class="fact">
+                <dt>Desenvolvimento</dt>
+                <dd>HTML, CSS, JavaScript, Git</dd>
+              </div>
+              <div class="fact">
+                <dt>3D</dt>
+                <dd>Blender</dd>
+              </div>
+            </dl>
+
+            <h3 class="about-subtitle">Trajetória</h3>
+            <dl class="facts">
+              <div class="fact">
+                <dt>2026</dt>
+                <dd>Projetos freelance de design e desenvolvimento web</dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTATO ===================== -->
+      <!-- EDITE: e-mail (apenas no link abaixo) e redes sociais -->
+      <section class="section" id="contato">
+        <div class="container contact">
+          <div>
+            <h2 class="contact-title">Entre em contato?</h2>
+            <p class="section-sub">
+              Conte um pouco sobre o que você precisa. Também pode escrever
+              direto para o meu e-mail.
+            </p>
+
+            <a class="big-email" id="email-link" href="japcimarosti@gmail.com">japcimarosti@gmail.com</a>
+
+            <ul class="socials">
+              <li><a href="https://instagram.com/julio_a_" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://linkedin.com/in/julioandrecimarosti" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://github.com/japcodex" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://behance.net/julioandre7" target="_blank" rel="noopener">Behance</a></li>
+            </ul>
+          </div>
+
+          <form class="form" id="contact-form">
+            <div class="field">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+            <button class="btn btn-light form-btn" type="submit">Enviar mensagem</button>
+            <p class="form-status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="ano">2026</span> Julio André</p>
+        <a href="#topo">Voltar ao topo</a>
       </div>
-    </section>
+    </footer>
+
+    <!-- Visualizador de imagem (posts) -->
+    <dialog class="lightbox" id="lightbox" aria-label="Imagem ampliada">
+      <button class="btn btn-ghost lightbox-close" type="button">Fechar</button>
+      <img src="" alt="" />
+    </dialog>
   </body>
 </html>
