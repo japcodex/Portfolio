@@ -55,6 +55,13 @@ button {
   cursor: pointer;
 }
 
+.home-image{
+  padding: 0;
+  align-self: center;
+  scale: .8;
+  margin-left: 0;
+}
+
 h1,
 h2,
 h3 {
