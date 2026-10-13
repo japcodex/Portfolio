@@ -55,6 +55,65 @@ button {
   cursor: pointer;
 }
 
+/* Carrossel */
+.carousel {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  overflow: hidden;
+  padding-top: 1em;
+}
+
+/* Grupos */
+.group {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 20px;
+  padding-right: 20px;
+  width: max-content;
+}
+
+/* Cards */
+.card {
+  flex: 0 0 260px;
+  width: 250px;
+  height: 340px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222;
+}
+
+/* Imagens */
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Zoom ao passar o mouse */
+.card:hover img {transform: scale(1.08);}
+
+/* Esquerda */
+.carousel.left .group {animation: scroll-left 20s linear infinite;}
+
+/* Direita */
+.carousel.right .group {animation: scroll-right 20s linear infinite;}
+
+/* Animação esquerda */
+@keyframes scroll-left {
+  from {transform: translateX(0);}
+  to {transform: translateX(-100%);}
+}
+
+/* Animação direita */
+@keyframes scroll-right {
+  from {transform: translateX(-100%);}
+  to {transform: translateX(0);}
+}
+
 .home-image{
   padding: 0;
   align-self: center;
